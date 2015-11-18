@@ -1,1 +1,1 @@
-{%% gateway.name %%}.no
+{{ gateway.name }}}.no

@@ -1,4 +1,6 @@
-name: Infrastruktur for Forskning
+name: {%% gateway.name %%}
+domain: {%% gateway.name %%}.no
+project: Infrastruktur for Forskning
 markdown: kramdown
 timezone: GB
 permalink: /blog/:year/:month/:day/:title
@@ -9,5 +11,3 @@ gems:
   - jekyll-redirect-from
   - jemoji
   - jekyll-mentions
-  
-  

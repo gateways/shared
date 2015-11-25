@@ -1,41 +1,254 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html
+    SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" class="no-js">
+    <head>
+        <title>{{ page.title }}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="{{ page.title }} : {{ site.domain }}" />
+        {% feed_meta %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <!-- <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta property="og:title" content="Forsiden" />
+        <meta property="og:url" content="http://www.kunnskapssenteret.no/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Nasjonalt kunnskapssenter for helsetjenesten" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.kunnskapssenteret.no/_public/shared/img/favicon.ico?_ts=14cd76352e8" />
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="{{ page.title }} : {{ site.domain }}">
-    {% feed_meta %}
-
-    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
-
-    <title>{{ page.title }}</title>
-
-  </head>
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title"><a href="/">{%% gateway.name %%}</a></h1>
-          <h2 id="project_tagline">Infrastruktur for Forskning</h2>
+        <script>document.getElementsByTagName('html')[0].className = 'js';</script> -->
+        <link rel="stylesheet" href="http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/css/main.css?_ts=1501ed19498" />
+        <link rel="stylesheet" href="http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/css/print.css?_ts=14cc7bc84b8" media="print" />
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/css/ltie9.css?_ts=14cc7bc84b8" />
+        <![endif]--><script src="http://www.kunnskapssenteret.no/_public/library-stk/js/head.load.min.js?_ts=14cc7bc84b8"></script> <!--[if lt IE 9]> <script>head.js('http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/html5shiv.js?_ts=14cc7bc84b8','http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/respond.min.js?_ts=14cc7bc84b8','http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/ltie9.js?_ts=14cc7bc84b8');</script> <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="left hidden-print">
+                    <button type="button" class="menu-toggle btn-master-menu">
+                        <span class="sr-only">Hovedmeny</span><span class="text hidden-xs">Meny</span>
+                        <div class="bar-box"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+                    </button>
+                </div>
+                <div class="right hidden-sm hidden-xs">{%% gateway.name %%}</div>
+                <!-- <figure class="main-logo">
+                  <a href="http://www.kunnskapssenteret.no/forsiden" class="ie8-special">
+                    <img src="http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/img/logo.png?_ts=14cc7bc84b8" alt="Logo Nasjonalt kunnskapssenter for helsetjenesten" />
+                  </a>
+                </figure> -->
+            </div>
         </header>
-    </div>
+        <nav role="navigation">
+            <ol role="menu" class="menu-level-1 main-menu">
+                <li role="menuitem" class="parent">
+                    <a href="/about">About</a>
+                    <ol role="menu" class="menu-level-2">
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+        <div class="c-searchbar hidden-print">
+            <div class="container">
+                <form id="master-search" class="master-search" role="search" method="get" action="http://www.kunnskapssenteret.no/sok">
+                    <div class="form-group"><input name="search" type="text" class="form-control" placeholder="Søk" value="" /></div>
+                    <button class="btn btn-default" type="submit" value="Search">Søk</button>
+                </form>
+            </div>
+        </div>
+        <main role="main">
+            <div class="row ">
+                <div class="region col span-12 main">
+                    <div  class="c-jumbotron">
+                        <div class="jumbotron">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 bottom-xs-1-6 teaser">
+                                        <h1><a href="http://www.kunnskapssenteret.no/kunnskapsbasert-helsetjeneste">Data delivery</a></h1>
+                                        <p>Secure point-to-point data deliver.</p>
+                                        <a href="/about" class="btn btn-primary btn-lg" role="button">Order data</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 bottom-xs-1-6 teaser">
+                                        <h1><a href="http://www.kunnskapssenteret.no/kvalitet-og-pasientsikkerhet">Identity sharing</a></h1>
+                                        <p>Cross-register, cross-entity, identity establishment.</p>
+                                        <a href="/about" class="btn btn-primary btn-lg" role="button">Assert identities</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 bottom-xs-1-6 teaser">
+                                        <h1><a href="http://www.kunnskapssenteret.no/publikasjoner">Code harmonization</a></h1>
+                                        <p>Cross-registry and cross-era code representations.</p>
+                                        <a href="http://www.kunnskapssenteret.no/publikasjoner" class="btn btn-primary btn-lg" role="button">Find codes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="c-panel">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h2 class="panel-title"><a href="http://www.kunnskapssenteret.no/verktoy">Tools</a></h2>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/about">tools.forresearch.no</a></li>
+                                            </ul>
+                                            <p><a href="http://www.kunnskapssenteret.no/verktoy">More...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h2 class="panel-title"><a href="/about">Directory</a></h2>
+                                        </div>
+                                        <div class="panel-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="http://repository.no/">Directory directory</a></li>
+                                            </ul>
+                                            <p><a href="/about">Browse open data resources</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h2 class="panel-title"><a href="/about">Events</a></h2>
+                                        </div>
+                                        <div class="panel-body c-events-simple">
+                                            <ul class="list-unstyled">
+                                                <li><a href="http://kurs.kunnskapssenteret.no/kursdetaljer.cfm?pAction=Article&amp;pCompanyId=272690&amp;pArticleId=41047&amp;pEMSId=15642">Launch</a><br /><small class="text-muted">1. feb</small></li>
+                                            </ul>
+                                            <p><a href="/about">More...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="c-thumbnail">
+                        <div class="jumbotron">
+                            <div class="center-block">
+                                <h1>News</h1>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
-        {{ content }}
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">{{ site.domain }} copyright iforsk 2015, hosted at <a href="https://github.com/gateways">IFF gateways</a></p>
-      </footer>
-    </div>
-  </body>
+                                        <div class="thumbnail">
+                                            <a href="http://www.kunnskapssenteret.no/199966/er-kunnskap-fra-kvalitativ-forskning-til-a-stole-pa">
+                                                <figure>
+                                                  <img alt="Simon og Claire" src="http://www.kunnskapssenteret.no/forsiden/_image/199968/label/medium.jpeg?_encoded=2f66666666666678302f30382f3b29303033286874646977656c616373&amp;_ts=150aeaf436a" />
+                                                </figure>
+                                            </a>
+                                            <div class="caption">
+                                                <p class="date">28. oktober 2015</p>
+                                                <h3><a href="http://www.kunnskapssenteret.no/199966/er-kunnskap-fra-kvalitativ-forskning-til-a-stole-pa">Er kunnskap fra kvalitativ forskning til å stole på?</a></h3>
+                                                <p>Sammen med forskere i WHO og andre eksperter innen kvalitativ forskning, har medarbeidere ved Kunnskapssenteret utviklet et hjelpemiddel for vurdering av kunnskap fra kvalitativ forskning. Resultatet, «CERQual», ble nylig publisert i PLOS Medicine.</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <a href="http://www.kunnskapssenteret.no/244075/pasienter-med-akutt-forvirring-blir-ofte-oversett">
+                                                <figure>
+                                                    <noscript><img alt="intensivpasient_COLOURBOX1145118_cropped_lavoppl" src="http://www.kunnskapssenteret.no/forsiden/_image/244088/label/medium.jpeg?_encoded=2f66666666666678302f30382f3b29303033286874646977656c616373&amp;_ts=1511f508e29" /></noscript>
+                                                    <img alt="intensivpasient_COLOURBOX1145118_cropped_lavoppl" title="intensivpasient_COLOURBOX1145118_cropped_lavoppl" data-srcset="{&#34;64&#34;:&#34;http://www.kunnskapssenteret.no/forsiden/_image/244088/label/small.jpeg?_encoded=2f66666666666678302f30382f3b293436286874646977656c616373&amp;_ts=1511f508e18&#34;,&#34;128&#34;:&#34;http://www.kunnskapssenteret.no/forsiden/_image/244088/label/small.jpeg?_encoded=2f66666666666678302f30382f3b29383231286874646977656c616373&amp;_ts=1511f508e18&#34;,&#34;256&#34;:&#34;http://www.kunnskapssenteret.no/forsiden/_image/244088/label/small.jpeg?_encoded=2f66666666666678302f30382f3b29363532286874646977656c616373&amp;_ts=1511f508e18&#34;,&#34;512&#34;:&#34;http://www.kunnskapssenteret.no/forsiden/_image/244088/label/medium.jpeg?_encoded=2f66666666666678302f30382f3b29323135286874646977656c616373&amp;_ts=1511f508e29&#34;,&#34;1024&#34;:&#34;http://www.kunnskapssenteret.no/forsiden/_image/244088.jpeg?_encoded=2f66666666666678302f30382f3b2934323031286874646977656c616373&amp;_ts=1511f508e2e&#34;}" data-ar="1.5223880597014925" class="js-img " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABDCAYAAABuvnDnAAAAMUlEQVR42u3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4DJrCwABjHmmVQAAAABJRU5ErkJggg==" />
+                                                </figure>
+                                            </a>
+                                            <div class="caption">
+                                                <p class="date">18. november 2015</p>
+                                                <h3><a href="http://www.kunnskapssenteret.no/244075/pasienter-med-akutt-forvirring-blir-ofte-oversett">Pasienter med akutt forvirring blir ofte oversett</a></h3>
+                                                <p>Akutt forvirring, delirium, blir ofte oversett og dermed behandlet senere enn ønskelig, viser nye forskningsresultater fra Australia. Hver tredje intensivpasient rammes av denne tilstanden ifølge en annen publikasjon.</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <a href="http://www.kunnskapssenteret.no/200065/faerre-hull-med-fluorpensling-av-melketenner">
+                                                <figure>
+                                                    <img alt="Tann på blå bakgrunn" src="http://www.kunnskapssenteret.no/forsiden/_image/244088/label/medium.jpeg?_encoded=2f66666666666678302f30382f3b29323135286874646977656c616373&_ts=1511f508e29" />
+                                                </figure>
+                                            </a>
+                                            <div class="caption">
+                                                <p class="date">3. november 2015</p>
+                                                <h3><a href="http://www.kunnskapssenteret.no/200065/faerre-hull-med-fluorpensling-av-melketenner">Færre hull med fluorpensling av melketenner</a></h3>
+                                                <p>Fluorpensling av melketenner reduserer karies hos barn under tre år. Det konkluderer Kunnskapssenteret i en ny forskningsoversikt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="thumbnail">
+                                            <div class="caption"><a href="/about">More...</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visible-print">({{ site.domain }}/)</div>
+        </main>
+        <footer class="master-footer hidden-print">
+            <h2 class="sr-only">Om oss</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-2 col-sm-4 bottom-xs-1-3 bottom-sm-1-3 bottom-md-1-3">
+                        <h3>About</h3>
+                        <a href="/about">About</a><br /><a href="/about">Projects</a><br /><a href="http://www.jucan.no/ledige-stillinger/Nasjonalt-kunnskapssenter-for-helsetjenesten">Ledige stillinger</a><br />
+                    </div>
+                    <div class="col-xs-12 col-lg-2 col-sm-4 bottom-xs-1-3 bottom-sm-1-3 bottom-md-1-3">
+                        <h3>Contact</h3>
+                        <a href="/about">Employees</a><br /><a href="/about">Contact information</a><br /><a href="mailto:contact@iforsk.no">Nettredaktør</a><br />
+                    </div>
+                    <div class="col-xs-12 col-lg-2 col-sm-4 bottom-xs-1-3 bottom-sm-1-3 bottom-md-1-3">
+                        <h3>Connect</h3>
+                        <a href="https://www.facebook.com/iffno">Facebook</a><br /><a href="https://twitter.com/iffno">Twitter</a><br />
+                    </div>
+                    <div class="bottom-xs-1-6 bottom-sm-0 col-xs-12 col-lg-4 col-lg-offset-2">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter</p>
+                        <div class="row newsletter bottom-xs-1-4">
+                            <form class="form-inline" role="form" action="http://www.anpdm.com/public/process-subscription-form.aspx?formId=43465E4B7640475C4571" method="post">
+                                <input type="hidden" name="pf_FormType" value="OptInForm" /><input type="hidden" name="pf_OptInMethod" value="SingleOptInMethod" /><input type="hidden" name="pf_CounterDemogrFields" value="0" /><input type="hidden" name="pf_CounterMailinglists" value="1" /><input type="hidden" name="pf_AccountId" value="10988" /><input type="hidden" name="pf_ListById" value="1" /><input type="hidden" name="pf_Version" value="2" /><input type="hidden" name="pf_MailinglistName1" value="317956" />
+                                <div class="form-group col-lg-9 col-sm-3 col-xs-9"><label class="sr-only" for="newsletter-email">E-mail</label><input name="pf_Email" type="email" class="form-control newsletter-email" id="newsletter-email" placeholder="E-post" /></div>
+                                <button type="submit" name="Submit" value="Subscribe" class="btn btn-primary col-sm-1 col-lg-3 col-xs-3">Subscribe</button>
+                            </form>
+                        </div>
+                        <p>Newsletter incoming, <a href="/about">see earlier newsletters.</a></p>
+                    </div>
+                </div>
+                <hr />
+                <div><small>{{ site.domain }} copyright iforsk 2015, hosted at <a href="https://github.com/gateways">IFF gateways</a></small></div>
+            </div>
+        </footer>
+        <div class="navbar navbar-inverse navbar-fixed-bottom hidden-print" id="advert">
+            <!-- <div class="container">
+                <p class="navbar-text cookietext">
+                  <a id="close-cookie-alert" class="closebutton pull-right" title="Lukke">
+                    <span class="glyphicon glyphicon-remove-circle"> </span></a>Vi bruker informasjonskapsler for å måle bruken av nettsidene.
+                      <a href="http://www.kunnskapssenteret.no/om-oss/bruk-av-informasjonskapsler">Les mer om informasjonskapsler</a>
+                        eller fortsett ved å godta (lukke) denne meldingen.</p>
+            </div> -->
+        </div>
+        <script>
+            //analytics
+        </script>
+        <!-- <script>head.js('http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/jquery-1.11.0.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/bootstrap.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/masonry.pkgd.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/imagesloaded.pkgd.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/jquery.debouncedresize.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/spin.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/jquery.spin.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/vendor/jquery.smooth-scroll.min.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/library-stk/js/stk.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/jquery.nokc.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/nokc.init.js?_ts=14e2520b790',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/ks-init.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/jquery-cookie.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/ks-handlecookie.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/ks-main-menu.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/ks-filter-dag.js?_ts=14cc7bc84b8',
+        'http://www.kunnskapssenteret.no/_public/theme-kunnskapssenteret/js/person-filter.js?_ts=14cc7bc84b8');</script>
+        <!--[if lt IE 9]> <script>head.js('http://www.kunnskapssenteret.no/_public/library-stk/js/selectivizr-min.js?_ts=14cc7bc84b8');</script> <![endif]-->
+         -->
+    </body>
 </html>
